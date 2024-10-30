@@ -52,4 +52,4 @@ def rename_package(old_name, new_name):
     # shutil.rmtree(f'{old_name}') # 谨慎使用，确保删除的是旧包目录
 
 
-rename_package("akshare", "byteapp_akt")
+rename_package("aktools", "byteapp_akt")
