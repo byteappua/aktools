@@ -58,5 +58,6 @@ jobs:
           TWINE_USERNAME: $(curl -s https://api.github.com/repos/byteappua/akshare/actions/secrets/PYPI_USERNAME | jq -r '.value')
           TWINE_PASSWORD: $(curl -s https://api.github.com/repos/byteappua/akshare/actions/secrets/PYPI_PASSWORD | jq -r '.value')
         run: |
+          python rename_package.py
           python setup.py sdist bdist_wheel
           twine upload dist/*
