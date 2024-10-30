@@ -41,10 +41,10 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v4
-      - name: release
-        uses: softprops/action-gh-release@v2
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # - name: release
+      #   uses: softprops/action-gh-release@v2
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: set up python
         uses: actions/setup-python@v5
         with:
