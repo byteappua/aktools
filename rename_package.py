@@ -14,6 +14,7 @@ def rename_package(old_name, new_name):
 	"""修改包名"""
 	# 1. 修改 setup.py 文件
 	replace_in_file('setup.py', old_name, new_name)
+	replace_in_file('Dockerfile', old_name, new_name)
 
 	# 2. 修改包目录名称
 	try:
